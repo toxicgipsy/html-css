@@ -11,6 +11,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+input,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -37,7 +42,7 @@ a {
     align-items: center;
 }
 
-.form__input {
+.header__input {
     width: 288px;
     height: 41px;
     border-radius: 20px;
@@ -315,7 +320,6 @@ a {
         font-size: $fontSize24;
         line-height: 29px;
         color: $blackColorText;
-        margin-bottom: 12px;
     }
 
     &__contacts {
@@ -372,7 +376,7 @@ a {
 
 
     &_button_email {
-        background: rgba(222, 215, 215, 041);
+        background: rgba(222, 215, 215, 0.41);
         border: 1px solid $whiteColorText;
         border-radius: 20px;
         width: 275px;
