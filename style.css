@@ -9,6 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -34,6 +39,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .header__input {
   width: 288px;
   height: 41px;
@@ -292,7 +298,6 @@ a {
   font-size: 24px;
   line-height: 29px;
   color: #000;
-  margin-bottom: 12px;
 }
 .footer__contacts {
   font-weight: 500;
@@ -340,7 +345,7 @@ a {
   block-size: border-box;
 }
 .footer__form_button_email {
-  background: rgb(222, 215, 215);
+  background: rgba(222, 215, 215, 0.41);
   border: 1px solid #ffffff;
   border-radius: 20px;
   width: 275px;
@@ -548,10 +553,9 @@ a {
 .cart__box {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: flex-start;
   border-top: 0.5px solid #CACDD8;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 .cart__box_content {
   display: flex;
@@ -676,9 +680,9 @@ a {
 .cart__form-button {
   width: 290px;
   height: 41px;
-  padding: 10px 63px 11px 90px;
   border-radius: 20px;
   border: 1px solid #040404;
+  background: transparent;
   color: #000;
   font-size: 16px;
   font-style: normal;
@@ -698,9 +702,8 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   gap: 41px;
-  padding-left: 27px;
-  padding-right: 64px;
 }
 .form .form__input {
   border: none;
@@ -712,6 +715,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 288px;
 }
 .form .form__input::-moz-placeholder {
   color: #000;
@@ -758,6 +762,9 @@ a {
   .cart__form {
     height: 556px;
     border-radius: 20px;
+  }
+  .cart__button {
+    padding-top: 7px;
   }
 }
 @media (max-width: 1024px) and (min-width: 768px) and (max-width: 833px) {
@@ -830,29 +837,29 @@ a {
     font-size: 14px;
     text-align: center;
   }
-  .for {
+  .form {
     padding-top: 32px;
   }
-  .for__title {
+  .form__title {
     font-size: 24px;
   }
-  .for__box {
+  .form__box {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 16px;
     -moz-column-gap: 0;
          column-gap: 0;
   }
-  .for__box__item {
+  .form__box__item {
     grid-column: 1/-1;
   }
-  .for__title {
+  .form__title {
     font-size: 24px;
   }
-  .for__item {
+  .form__item {
     font-size: 28px;
     height: 375px;
   }
-  .for__big_pic {
+  .form__big_pic {
     height: 244px;
   }
   .heading {
@@ -875,8 +882,7 @@ a {
     font-size: 18px;
   }
   .bottom__catalog {
-    padding-top: 36px;
-    padding-bottom: 32px;
+    padding: 32px 0;
   }
   .footer__content {
     justify-content: center;
@@ -926,9 +932,7 @@ a {
     padding-bottom: 32px;
   }
   .header__img_cart {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 70%;
   }
   .cart__box_content_img {
     display: none;
@@ -955,9 +959,7 @@ a {
   .cart__button {
     display: flex;
     gap: 14px;
-  }
-  .cart__form {
-    width: 343px;
+    padding-top: 7px;
   }
   .cart__form-title {
     display: block;
@@ -965,5 +967,8 @@ a {
   }
   .cart__button-trash-buy {
     font-size: 12px;
+  }
+  .cart__box {
+    padding-bottom: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
