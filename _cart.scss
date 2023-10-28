@@ -135,7 +135,6 @@
     padding-top: 127px;
 }
 
-
 .cart {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -165,10 +164,9 @@
     &__box {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         align-items: flex-start;
         border-top: 0.5px solid #CACDD8;
-        padding-top: 25px;
+        padding: 25px 0;
     }
 
     &__box_content {
@@ -188,7 +186,6 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-
             }
 
             &-text {
@@ -308,9 +305,9 @@
     &-button {
         width: 290px;
         height: 41px;
-        padding: 10px 63px 11px 90px;
         border-radius: 20px;
         border: 1px solid #040404;
+        background: transparent;
         color: $blackColorText;
         font-size: 16px;
         font-style: normal;
@@ -332,9 +329,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     gap: 41px;
-    padding-left: 27px;
-    padding-right: 64px;
 
     .form__input {
         border: none;
@@ -346,10 +342,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        width: 288px;
 
         &::placeholder {
             color: $blackColorText;
         }
     }
-
 }
